@@ -9,7 +9,7 @@
 			Driver is required(JDBC driver class) -->
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		
-		<!-- Here geeksforgeeks is the name of the database
+		<!-- Here Student is the name of the database
 			that we are connecting(JDBC URL) -->
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Student</property>
 		
@@ -28,7 +28,7 @@
 		<property name="hbm2ddl.auto">update </property>
 		
 		<!-- We need to provide the exact mapping file
-			which we have created earlier -->
+			which you have created,Like in my case I have created a hbm.xml file whose name is StudentDetails.hbm.xml -->
 		<mapping resource="StudentDetails.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>
